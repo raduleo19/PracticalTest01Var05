@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest01Var05MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-25dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <Button
+            android:id="@+id/navigate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigate to secondary activity" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="3"
+            app:rowCount="3">
+
+            <Button
+                android:id="@+id/top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TopLeft"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/bottom_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BottomLeft"
+                app:layout_column="0"
+                app:layout_row="2"
+                />
+
+            <Button
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Center"
+                app:layout_column="1"
+                app:layout_row="1"
+                android:gravity="center"
+                app:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TopRight"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/bottom_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BottomRight"
+                app:layout_column="2"
+                app:layout_row="2" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <EditText
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:enabled="false"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
